@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C NOTES</title>
+    <style>
+        body{
+            background-color:rgba(77, 42, 165, 0.723);
+        }
+        
+        #head{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+             flex-wrap: nowrap;
+             flex-wrap: wrap; 
+             flex-flow: row wrap;
+             justify-content:space-between;
+             
+        }
+        .box1{
+            border: 3px rgb(51, 0, 255) solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box2{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box3{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box4{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;    
+        }
+        .box5{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white; 
+        }
+        .box6{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;  
+        }
+        .box7{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box8{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white; 
+        }
+        .box9{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box10{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box11{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box12{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box13{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box14{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box15{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box16{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box17{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box18{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box19{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box20{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box21{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box22{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box23{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box24{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+        .box25{
+            border: 3px black solid;
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 2px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 50px;">Basics in C</h1>
+    <div class="container">
+        <div class="box1">
+            <h3 id="head">Boilerplate of C</h3>
+            <pre>
+    #include<stdio.h>
+        int main(){
+         printf("hello world")
+        return 0;
+     }
+            </pre>
+        </div>
+        <div class="box2">
+            <h3 id="head">Variables in C</h3>
+        <p>There are three type of variables in C.int value show only integer value, float value show  decimal value, char shows a character.</p> <p>These all value have to put in main function or by defining a function.</p>
+        </div>
+        <div class="box3"> <p> Print is used to give the output. Here %d is used for integer, %f is used for float, and %c is used for char value.</p>
+        <p> To comment in a single line we use // and to comment multiple line we use /* and end it with */.</p>
+        </div>
+        <div class="box4"> 
+            <h3 id="head">How to take inpur from user</h3>
+            <p>First intialize the all variable.</p>
+            <p>To take input from user we use scanf function.And put the symbols for variable and add & sign with variables.</p>
+        </div>
+        <div class="box5">
+           <h3 id="head"> Escape sequence value</h3>
+           <p>We use \n to chane line, \t to give space between words, \" to apply any quote instead of double quote like \\ to apply \ in line.</p>
+        </div>
+        <div class="box6">
+            <h3 id="head">arithmetic instruction</h3>
+            <p>+ is used for addition, - is used for subtraction, * is used for multiplication, / is used for division and % is used for remainders.</p>
+            <p>we can't write b*c=d but we can write d=b*c.</p>
+        </div>
+        <div class="box7">
+            <h3 id="head">Type conversion</h3>
+            <pre>int+int=int,     float+float=float, <br>int+float=float</pre>
+            <p>If we write int=4.8 then it gives 4 beacuse it gives only integer at output.</p> 
+        </div>
+        <div class="box8">
+            <h3 id="head">Operaters precedence</h3>
+            <pre>(* / %) is used first in the sequence after <br> that (+ -) is used and at last = is used.</pre>
+             <p> In case of all 1st priority sign is given then order is left to right.</p>
+        </div>
+        <div class="box9">
+            <h3 id="head">Conditional probability</h3>
+            <p>There are two types of conditional probability. first is if-else statement and another is switch statement.</p>
+            <p>These statement helps in decision making.</p>
+        </div>
+        <div class="box10">
+            <h3 id="head">If-Else statement</h3>
+            <p>If-Else statement is used to show the dependency.Like if rain hapeen you are not able to go to college else you can go.</p>
+            <p>It basically use in logical questions.</p>
+        </div>
+        <div class="box11">
+           <h3 id="head"> switch statement </h3>
+           <p>switch is used as cases like if case 1 happens execute this, if case 2 happens execute this.</p>
+           <p>Here we use break to stop execution of other cases.</p>
+        </div>
+        <div class="box12">
+            <h3 id="head">Relational operators</h3>
+            <pre> we use ==(equal to),>=(greater or equal to<br>>(greater), <=(less or equal to), <(less), <br> !=(not equal to) </pre>
+        </div>
+        <div class="box13">
+            <h3 id="head">Logical operators</h3>
+            <p>There are three logical operators.&& is used for AND, || is used for OR and ! is used for NOT. AND is used where both conditions are true. OR is used when at least one condition is true. NOT is used for flip the value.</p>
+        </div>
+        <div class="box14">
+            <h3 id="head">Else-if statement</h3>
+            <p>we use Else-if statement bacause we can't use else multiple times. But we can use only IF multiple times.</p>
+        </div>
+        <div class="box15">
+            <h3 id="head">Loop cintrol system</h3>
+            <p>If we have to print a program many times then we use loops. There are three types of loops. First is while loop second is do-while loop and third is for loop.</p>
+        </div>
+        <div class="box16">
+            <h3 id="head"> While loop</h3>
+            <p>While loop is used on given condition.It continued printing value till the condition not get false. for example  if int = 0, print SHIVAM till I is less than 10.In this case it eill print SHIVAM 10 times starting from zero.</p>
+        </div>
+        <div class="box17">
+            <h3 id="head">Increment and decremant operators</h3>
+            <pre>I++ gives i increase by 1 while I-- gives i <br> decrease by 1.  I+2= gives I=I+2.</pre>
+            <pre>And when we use sum +=i, <br> it means sum = sum +i.</pre>
+        </div>
+        <div class="box18">
+            <h3 id="head">Do-While loop</h3>
+            <p>While loop checks the condition then execute while Do-while loop excutes first then check the condition.It looks very similar to while loop. </p>
+        </div>
+        <div class="box19">
+            <h3 id="head">for loop</h3>
+            <p>It is like a shorthand of all loops. In this we can write int value, condition, increment and decrement in same line.</p>
+        </div>
+        <div class="box20">
+            <h3 id="head">Break and Countinue statrment</h3>
+            <p>Break statement breaks the execution where you wants independent of condition on the other hand Countinue statement skip the a condition that you want and then reexecute the program. </p>
+        </div>
+        <div class="box21">
+            <h3 id="head">Functions</h3>
+            <p>Function is use to break our code into chunks so that it is possible for a programmer
+                to reuse them.It define something like sum or factorial so that we can use mant times we wants in our code so that we don't write many times.</p>
+        </div>
+        <div class="box22">
+            <h3 id="head">Function prototype and call</h3>
+            <p>A function prototype informs the compiler about a function that will be defined later in
+                the program. function call performs the execution when it is called by the code written in main function.</p>
+        </div>
+        <div class="box23">
+            <h3 id="head">Function definition</h3>
+            <p>In this we define what logic does a function contain when it is called in the main function.During call of a function main function got paused and call function prototype and restart again the main function.</p>
+        </div>
+        <div class="box24">
+            <h3 id="head">Types of function</h3>
+            <p>ther are two types of function first is library function tht is pre installed and another is user defined function that defines by the user using his logic.</p>
+        </div>
+        <div class="box25">
+            <h3 id="head">Important notes </h3>
+            <p>A function can return only one value at a time.If the passed variable is changed inside the function, the function call doesn't change the value in the calling function.</p>
+        </div>
+
+</div>
+        
+</body>
+</html>
