@@ -29,24 +29,12 @@
             background-color: rgba(0, 0, 0, 0.449);
             color: white;
          }
-         .left{
-            display: inline-block;
-            position: absolute;
-            left: 60px;
-            top: 20px;
-         }
-        .left img{
-            border-radius:50%;
-            object-fit: cover;
-            width: 80px;
-            height:80px;
-        }
+         
 
     </style>
 </head>
 <body>
     <h1 style="text-align: center; font-size: 50px;">C NOTES</h1>
-    <div class="left"><img src="my.png.jpg" alt=""></div>
     <div class="container">
         <div id="box">
             <h3 id="head">Boilerplate of C</h3>
@@ -163,10 +151,37 @@
             <h3 id="head">Important notes </h3>
             <p>A function can return only one value at a time.If the passed variable is changed inside the function, the function call doesn't change the value in the calling function.</p>
         </div>
+        <div id="box">
+            <h3 id="head">Pointers</h3>
+            <p>Pointer is a variable which stores the address of another variable.There are mainly two opertors are used.First is (&) operator used to obtain the address of given variable and the second is (*) operator used to obtain the value present at a given address. </p>
+        </div>
+        <div id="box">
+            <h3 id="head">Declearation of a pointer </h3>
+            <p>The syntax that is used to declare address is [int *j] and after the j is declare the definition comes [j= &i] which means it stores the address of the variable (i). Basically (*) symbol is used to store and (&) is used for address.</p>
+        </div>
+        <div id="box">
+            <h3 id="head">Types of function call</h3>
+            <p>There are two types of function call.First is call by value, in this we can't change the value of any variable on calling.Second is call by refrence, in this we use address to call and we change the value using this.</p>
+        </div>
+        <div id="box"><h3 id="head">Arrays</h3>
+            <p>In array we can store several elements of similar type.We can declare this like (int marks[90];) which means this array can store 90 values from 0 to 89.Wee can take all thes values from user also using loop. </p>
+        </div>
+         <div id="box">
+            <h3 id="head">Storation of arrays</h3>
+            <p>int marks[3] = {78, 88, 89}  which means the marks array stores three values that is 78, 88. 89.If you given value like that then you are free to write store number because it will count.</p>
+         </div>
+         <div id="box">
+            <h3 id="head">Pointer arithmetic</h3>
+            <p>In case of arrays, the memory consumed for every value is continuous.We can add or subtract a number to pointer using ++ to a pointer.It will give add more bytes to your value depending upon the bytes taken by your system for specifiers. </p>
+         </div>
+         <div id="box">
+            <h3 id="head">2D-arrays</h3>
+            <p>This arrays can be defined as two dimensional which take rows an column.In the case also memory is consumed continuously.We can access these elements using its dimension like [0][0] for first element similarly [0][1] for second.</p>
+         </div>
 
 </div>
 <div id="footer">
-    <footer style="text-align: center; font-size: 80px;">This project is under process.</footer>
+    <footer style="text-align: center; font-size: 40px;">This project is under process.</footer>
 </div>
         
 </body>
