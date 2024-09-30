@@ -29,6 +29,16 @@
             background-color: rgba(0, 0, 0, 0.449);
             color: white;
          }
+         footer{
+            text-align: center;
+            padding: 1rem;
+            font-size: 20px;
+            background-color:rgba(0, 0, 0, 0.551);
+            color:white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+         }
          
 
     </style>
@@ -178,11 +188,45 @@
             <h3 id="head">2D-arrays</h3>
             <p>This arrays can be defined as two dimensional which take rows an column.In the case also memory is consumed continuously.We can access these elements using its dimension like [0][0] for first element similarly [0][1] for second.</p>
          </div>
+         <div id="box">
+            <h3 id="head">String</h3>
+            <p>A string is a 1-D character array terminated by a null character (‘\0’). A sring can be intialized as char s[] = {'G', 'N', 'I', 'O', 'T', '\0'};. It has 6 character including null which termintes the string.We can store using double quote for easier way.
+            </p>
+         </div>
+         <div id="box">
+            <h3 id="head">Print and scan of string</h3>
+            <p>We use %c for print but ther is a easier way that is %s for string and for scan function we can use without & sign because & print the address of the string. It's address as same as int values but it take less bytes compare to int values.  </p>
+         </div>
+         <div id="box">
+            <h3 id="head">Gets and Puts </h3>
+            <p>Scan can't store multi values in string so we use gets instead of that and same there is a puts that gives output of multi values. And declearation of a pointer is same as int values, we use * sign to store. A string defined using pointers can be reinitialized. </p>
+         </div>
+         <div id="box">
+            <h3 id="head">Libraries and function</h3>
+            <p>C provides a set of standard library functions for string manipulation. Like STRLEN() which gives the length of a string excluding null character. Second is STRCPY() which copies the second string into the first string.</p>
+         </div>
+         <div id="box">
+            <h3 id="head">STRCAT and STRCMP</h3>
+            <p>STRCAT is used to store two string characters. If we print it, it gives both in same line without space. STRCMP is used to compare two strings.It return 0 if the first string has letter lesser than the second one and positive in vice versa situation, depending upon ASCII value.</p>
+         </div>
+         <div id="box">
+            <h3 id="head">Structures</h3>
+            <p>In previous arrays we can store only similar type of data but in structures we can store mutitype like int, float, char in same array.It mainly used when number of properties increases. It is declared using "struct" above the main function. </p>
+         </div>
+         <div id="box">
+            <h3 id="head">Array of structures</h3>
+            <p>Just like an array of integers, an array of floats and an array of characters, we can create
+                an array of structures.We can also intialize array as [struct students shivam = {100, 100, "shivam"};]. Similarly like array of any other variable, we are also able to find or value using it's address.</p>
+         </div>
+         <div id="box">
+            <h3 id="head">Typedeff Keyboard</h3>
+            <p>We can use the ‘typedef’ keyword to create an alias name for data types in C.
+                ‘typedef’ is more commonly used with structures. After using this we can create a shorthand for any variables specifier.Basically we can replace int to shivam, now we can use shivam instead of writing int.We declare it using "typedeff int shivam". </p>
+         </div>
 
 </div>
-<div id="footer">
-    <footer style="text-align: center; font-size: 40px;">This project is under process.</footer>
-</div>
+         <footer class="credit">C-Notes by Shivam</footer>
+
         
 </body>
 </html>
