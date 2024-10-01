@@ -115,7 +115,7 @@
             <p>we use Else-if statement bacause we can't use else multiple times. But we can use only IF multiple times.</p>
         </div>
         <div id="box">
-            <h3 id="head">Loop cintrol system</h3>
+            <h3 id="head">Loop control system</h3>
             <p>If we have to print a program many times then we use loops. There are three types of loops. First is while loop second is do-while loop and third is for loop.</p>
         </div>
         <div id="box">
@@ -223,9 +223,39 @@
             <p>We can use the ‘typedef’ keyword to create an alias name for data types in C.
                 ‘typedef’ is more commonly used with structures. After using this we can create a shorthand for any variables specifier.Basically we can replace int to shivam, now we can use shivam instead of writing int.We declare it using "typedeff int shivam". </p>
          </div>
+         <div id="box">
+            <h3 id="head">File I/O</h3>
+            <p>If we want to read a file or write something in file we use file pointers.A File pointer is needs to be created to open the file.It structure is like:- <br> [FILE *ptr; <br>ptr = fopen("filename.ext"; "mode");] </p>
+         </div>
+         <div id="box">
+            <h3 id="head">File openings modes</h3>
+            <p>Some of the modes are like ('r' for read the file), ('w' for write something in file), ('a' for write something but without erasing the previous ones), ('wb' for writing in binary), ('wr' for reading in binary).Mainly ther are two types of files text files(.txt, c) and binary files(.jpg, dat). </p>
+         </div>
+         <div id="box">
+        <h3 id="head">Important to know</h3>
+        <p>It is very important to close the file after read or write to prevent it from running everytime.We can read the file using fscanf function by giving the address of the file and similarly we use fprint to write in file.</p>
+         </div>
+         <div id="box">
+            <h3 id="head">Fgets, Fputs and EOF</h3>
+            <p>fgetc and fputc are used to read and write a character from to a file.EOF stands for end of file that is used to read all the characters of file while it don't get end.</p>
+         </div>
+         <div id="box">
+            <h3 id="head">Dynamic memory allocation</h3>
+            <p>In c language you can't change size of an array but by using dynamic memory allocation we can fix it.For these there are some functions of it like malloc function is used to takes number of bytes to be allocated as an
+                input and returns a pointer of type void.the syntax for malloc is [ptr = (int*)malloc(30* sizeof (int))].
+                 </p>
+         </div>
+         <div id="box">
+            <h3 id="head">Calloc and Free</h3>
+            <p>the function of calloc is same as malloc but calloc contains '0' as it's arrays value while malloc contains garbage values and we use (n,) instead of (n*) in calloc syntax.We can use free() function to deallocate the memory. The memory allocated using calloc/malloc is not deallocated automatically.The syntax is [free(ptr);]</p>
+         </div>
+         <div id="box">
+            <h3 id="head">Realloc</h3>
+            <p>Sometimes the dynamically allocated memory is insufficient or more than required.Realloc is used to allocate memory of new size using the previous pointer and size.The syntax for Realloc is [ptr = realloc (ptr, 3*sizeof(int));]</p>
+         </div>
 
 </div>
-         <footer class="credit">C-Notes by Shivam</footer>
+         <footer class="credit"> @2024 C-Notes by Shivam</footer>
 
         
 </body>
